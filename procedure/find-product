@@ -1,0 +1,12 @@
+USE `dbproducto`;
+DROP procedure IF EXISTS `find_product`;
+
+DELIMITER $$
+USE `dbproducto`$$
+CREATE PROCEDURE `find_product` (p_name VARCHAR(255))
+BEGIN
+	select p.id,p.code,p.name,p.weight from product p
+    where p.NAME like p_name;
+END$$
+
+DELIMITER ;

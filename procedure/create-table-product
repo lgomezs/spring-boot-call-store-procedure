@@ -1,0 +1,8 @@
+CREATE TABLE `product` (
+  `id` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `code` varchar(45) COLLATE latin1_spanish_ci DEFAULT NULL,
+  `name` varchar(85) CHARACTER SET latin1 DEFAULT NULL,
+  `weight` decimal(10,0) DEFAULT NULL,
+  `productcol` varchar(45) COLLATE latin1_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
